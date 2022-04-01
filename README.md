@@ -60,6 +60,13 @@ To create a new component use  `ng generate component name-component` The comman
 
 `npm install ngx-image-cropper`
 
+**QR CODE Generator**
+
+``` sh
+    ng add @angular/material
+    npm install angularx-qrcode --save
+```
+
 
 
 

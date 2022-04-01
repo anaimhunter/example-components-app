@@ -12,13 +12,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ImageCropperModule } from 'ngx-image-cropper';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ImageCropComponent } from './image-crop/image-crop.component';
+import { QrCodeComponent } from './qr-code/qr-code.component';
+import { QRCodeModule } from 'angularx-qrcode';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     DataTableComponent,
     CarouselComponent,
-    ImageCropComponent
+    ImageCropComponent,
+    QrCodeComponent
   ],
   imports: [
     BrowserModule,
@@ -27,6 +31,7 @@ import { ImageCropComponent } from './image-crop/image-crop.component';
     HttpClientModule,
     BrowserAnimationsModule,
     ImageCropperModule,
+    QRCodeModule,
     NgbModule,
   ],
   providers: [],
