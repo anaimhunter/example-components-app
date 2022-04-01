@@ -9,13 +9,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { DataTableComponent } from './data-table/data-table.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ImageCropperModule } from 'ngx-image-cropper';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ImageCropComponent } from './image-crop/image-crop.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DataTableComponent,
-    CarouselComponent
+    CarouselComponent,
+    ImageCropComponent
   ],
   imports: [
     BrowserModule,
@@ -23,6 +26,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     DataTablesModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    ImageCropperModule,
     NgbModule,
   ],
   providers: [],

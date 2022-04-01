@@ -56,6 +56,11 @@ To create a new component use  `ng generate component name-component` The comman
     ng add @ng-bootstrap/ng-bootstrap
 ```
 
+**Image Cropper**
+
+`npm install ngx-image-cropper`
+
+
 
 
 
