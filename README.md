@@ -30,6 +30,13 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 To create a new component use  `ng generate component name-component` The command scaffolds the following: Creates a directory  `src/app/name-component`. 
 
+**Bootstrap**
+
+``` sh
+    npm install bootstrap
+    npm i @popperjs/core
+``` 
+
 **jQuery & DataTable**
 
 ``` sh
@@ -41,5 +48,14 @@ To create a new component use  `ng generate component name-component` The comman
     npm install @types/datatables.net --save-dev
     npm install bootstrap --save
 ```
+
+**Boostrap Carousel**
+
+``` sh
+    npm install jquery --save
+    ng add @ng-bootstrap/ng-bootstrap
+```
+
+
 
 
