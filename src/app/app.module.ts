@@ -14,7 +14,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ImageCropComponent } from './image-crop/image-crop.component';
 import { QrCodeComponent } from './qr-code/qr-code.component';
 import { QRCodeModule } from 'angularx-qrcode';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MultipleImageUploadComponent } from './multiple-image-upload/multiple-image-upload.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { QRCodeModule } from 'angularx-qrcode';
     DataTableComponent,
     CarouselComponent,
     ImageCropComponent,
-    QrCodeComponent
+    QrCodeComponent,
+    MultipleImageUploadComponent
   ],
   imports: [
     BrowserModule,
@@ -32,6 +34,8 @@ import { QRCodeModule } from 'angularx-qrcode';
     BrowserAnimationsModule,
     ImageCropperModule,
     QRCodeModule,
+    FormsModule,
+    ReactiveFormsModule,
     NgbModule,
   ],
   providers: [],
