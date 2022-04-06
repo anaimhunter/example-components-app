@@ -27,6 +27,7 @@
     "@ng-bootstrap/ng-bootstrap": "^12.0.1",
     "@popperjs/core": "^2.11.4",
     "@types/bootstrap": "^5.1.9",
+    "@vanilla-extract/css": "^1.6.8",
     "angular-datatables": "^13.0.1",
     "angularx-qrcode": "^13.0.8",
     "bootstrap": "^5.1.3",

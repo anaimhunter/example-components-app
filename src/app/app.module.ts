@@ -17,6 +17,7 @@ import { QRCodeModule } from 'angularx-qrcode';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MultipleImageUploadComponent } from './multiple-image-upload/multiple-image-upload.component';
 import { DataTableCsvComponent } from './data-table-csv/data-table-csv.component';
+import { ArticulosComponent } from './articulos/articulos.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { DataTableCsvComponent } from './data-table-csv/data-table-csv.component
     ImageCropComponent,
     QrCodeComponent,
     MultipleImageUploadComponent,
-    DataTableCsvComponent
+    DataTableCsvComponent,
+    ArticulosComponent
   ],
   imports: [
     BrowserModule,
