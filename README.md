@@ -117,7 +117,26 @@ Before you start the application, you have to tweak your `tsconfig.json` file, d
     npm install @fullcalendar/interaction
 ```
 
+**HTTP Requests with Angular HttpClient API**
 
+***JSON Server ***
+
+```sh
+   npm install -g json-server
+   json-server --watch database.json
+```
+
+Congratulations, you have just set up the backend server for dealing with HTTP requests locally. Now, you can check the below endpoint on your browser: `http://localhost:3000/users`
+
+***Angular Service***
+
+Components cannot directly get or store the data, rather they are designed to display or assign data to a service.
+
+What is more, we would like to show you how you can easily consume REST APIs with angular service. Generate CRUD service and define the User class within.
+
+```sh
+    ng g s shared/crud
+```
 
 
 
