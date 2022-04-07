@@ -23,6 +23,9 @@ import { FullCalendarModule } from '@fullcalendar/angular';
 import interactionPlugin from '@fullcalendar/interaction';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import { FullcalendarDynamicEventsComponent } from './fullcalendar-dynamic-events/fullcalendar-dynamic-events.component';
+import { AddUserComponent } from './users-components/add-user/add-user.component';
+import { EditUserComponent } from './users-components/edit-user/edit-user.component';
+import { UsersListComponent } from './users-components/users-list/users-list.component';
 FullCalendarModule.registerPlugins([interactionPlugin, dayGridPlugin]);
 
 @NgModule({
@@ -36,7 +39,10 @@ FullCalendarModule.registerPlugins([interactionPlugin, dayGridPlugin]);
     DataTableCsvComponent,
     ArticulosComponent,
     UsersJsonComponent,
-    FullcalendarDynamicEventsComponent
+    FullcalendarDynamicEventsComponent,
+    AddUserComponent,
+    EditUserComponent,
+    UsersListComponent
   ],
   imports: [
     BrowserModule,
