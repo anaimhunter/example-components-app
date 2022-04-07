@@ -1,15 +1,26 @@
 import { Component, OnInit } from '@angular/core';
-
+import { CrudService } from '../../shared/crud.service';
 @Component({
   selector: 'app-users-list',
   templateUrl: './users-list.component.html',
-  styleUrls: ['./users-list.component.css']
+  styleUrls: ['./users-list.component.scss'],
 })
 export class UsersListComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
+  Users: any = [];
+  constructor(public crudService: CrudService) {}
+  ngOnInit() {
+    this.fetchUsers();
   }
-
+  fetchUsers() {
+    return this.crudService.getUsers().subscribe((res: {}) => {
+      this.Users = res;
+    });
+  }
+  delete(id: any) {
+    if (window.confirm('Really?')) {
+      this.crudService.deleteUser(id).subscribe((res) => {
+        this.fetchUsers();
+      });
+    }
+  }
 }
