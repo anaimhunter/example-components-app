@@ -93,7 +93,21 @@ Start the `MySQL Service`
 
 Go to `Admin` on MySQL Service. It will open `myPhpAdmin Portal` where you be able to create your data base.
 
+**JSON Data File**
 
+***Update tsconfig JSON***
+
+Before you start the application, you have to tweak your `tsconfig.json` file, define the resolveJsonModule and esModuleInterop inside the compilerOptions object.
+
+```sh
+    {
+    "compileOnSave": false,
+    "compilerOptions": {
+        "resolveJsonModule": true,
+        "esModuleInterop": true,  
+    ...
+    ...
+```
 
 
 
