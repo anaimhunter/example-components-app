@@ -19,6 +19,11 @@ import { MultipleImageUploadComponent } from './multiple-image-upload/multiple-i
 import { DataTableCsvComponent } from './data-table-csv/data-table-csv.component';
 import { ArticulosComponent } from './articulos/articulos.component';
 import { UsersJsonComponent } from './users-json/users-json.component';
+import { FullCalendarModule } from '@fullcalendar/angular';
+import interactionPlugin from '@fullcalendar/interaction';
+import dayGridPlugin from '@fullcalendar/daygrid';
+import { FullcalendarDynamicEventsComponent } from './fullcalendar-dynamic-events/fullcalendar-dynamic-events.component';
+FullCalendarModule.registerPlugins([interactionPlugin, dayGridPlugin]);
 
 @NgModule({
   declarations: [
@@ -30,7 +35,8 @@ import { UsersJsonComponent } from './users-json/users-json.component';
     MultipleImageUploadComponent,
     DataTableCsvComponent,
     ArticulosComponent,
-    UsersJsonComponent
+    UsersJsonComponent,
+    FullcalendarDynamicEventsComponent
   ],
   imports: [
     BrowserModule,
@@ -41,6 +47,7 @@ import { UsersJsonComponent } from './users-json/users-json.component';
     ImageCropperModule,
     QRCodeModule,
     FormsModule,
+    FullCalendarModule,
     ReactiveFormsModule,
     NgbModule,
   ],

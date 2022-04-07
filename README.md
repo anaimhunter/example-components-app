@@ -109,6 +109,14 @@ Before you start the application, you have to tweak your `tsconfig.json` file, d
     ...
 ```
 
+**Fullcalendar Dynamic**
+
+```sh
+    npm install @fullcalendar/angular 
+    npm install @fullcalendar/daygrid
+    npm install @fullcalendar/interaction
+```
+
 
 
 
