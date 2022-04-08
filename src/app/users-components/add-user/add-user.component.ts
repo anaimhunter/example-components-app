@@ -4,7 +4,7 @@ import { CrudService } from "../../shared/crud.service";
 @Component({
   selector: 'app-add-user',
   templateUrl: './add-user.component.html',
-  styleUrls: ['./add-user.component.scss']
+  styleUrls: ['./add-user.component.css']
 })
 export class AddUserComponent implements OnInit {
   @Input() userObj = { name: '', email: '', phone: 0 }

@@ -3,7 +3,7 @@ import { CrudService } from '../../shared/crud.service';
 @Component({
   selector: 'app-users-list',
   templateUrl: './users-list.component.html',
-  styleUrls: ['./users-list.component.scss'],
+  styleUrls: ['./users-list.component.css'],
 })
 export class UsersListComponent implements OnInit {
   Users: any = [];
