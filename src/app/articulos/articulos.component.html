@@ -1,26 +1,42 @@
-<div>
-    <h1>Administración de artículos</h1>
-      <table  *ngIf="hayRegistros(); else sinarticulos">
-        <tr class="headers">
-          <td>Codigo</td><td>Descripcion</td><td>Precio</td><td>Borrar</td><td>Seleccionar</td>
-        </tr>
-        <tr *ngFor="let art of articulos">
+<div >
+  <h1 class="mb-3 text-center">Administración de artículos</h1>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">#Codigo</th>
+        <th scope="col">Descripcion</th>
+        <th scope="col">Precio</th>
+        <th scope="col">Opcion</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let art of articulos">
           <td>{{art.codigo}}</td>
           <td>{{art.descripcion}}</td>
           <td>{{art.precio}}</td>
-          <td><button (click)="baja(art.codigo)">Borrar?</button></td>
-          <td><button (click)="seleccionar(art.codigo)">Seleccionar</button></td>        
-        </tr>
-      </table>
-      <ng-template #sinarticulos><p>No hay articulos.</p></ng-template>
-      <div class="data">
-        <p>
-          descripcion:<input type="text" [(ngModel)]="art.descripcion" />
-        </p>
-        <p>
-          precio:<input type="number" [(ngModel)]="art.precio" />
-        </p>            
-        <p><button (click)="alta()">Agregar</button>
-        <button (click)="modificacion()">Modificar</button></p>
-      </div>  
-  </div>
+        <td>
+          <span class="edit btn-danger btn-sm btn" (click)="baja(art.codigo)"
+            >Delete</span
+          >
+          &nbsp;
+          <span
+            class="edit btn-success btn-sm btn" (click)="seleccionar(art.codigo)"
+            >Edit</span
+          >
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <ng-template #sinarticulos><p>No hay articulos.</p></ng-template>
+    <div class="data">
+      <p>
+        descripcion:<input type="text" [(ngModel)]="art.descripcion" />
+      </p>
+      <p>
+        precio:<input type="number" [(ngModel)]="art.precio" />
+      </p>            
+      <p><button  class="btn  btn-sm btn-primary" (click)="alta()">Agregar</button>
+        &nbsp;
+      <button class="edit btn-success btn-sm btn" (click)="modificacion()">Modificar</button></p>
+    </div> 
+</div>
